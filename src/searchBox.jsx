@@ -70,7 +70,7 @@ export default function SearchBox({ setWeatherInfo }) {
   const [city, setCity] = useState("");
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  const API_KEY = "b0142c52e7cbdcfcdbf659c317782ae7";
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; 
 
   const getWeatherInfo = async () => {
     try {
